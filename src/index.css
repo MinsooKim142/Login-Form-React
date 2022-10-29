@@ -39,7 +39,12 @@ form:after {
 
 }
 
-form:inner {
+form .form-inner {
 
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    padding:30px;
+    z-index:2;
 
 }
