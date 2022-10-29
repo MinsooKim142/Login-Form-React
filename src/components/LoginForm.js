@@ -23,6 +23,13 @@ function LoginForm() {
 
             </div>
 
+            <div className="form-group">
+                <input type="submit" value="SUBMIT"/>
+
+            </div>
+
+
+
         </div>
     </form>
   )
