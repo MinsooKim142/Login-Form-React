@@ -1,8 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function LoginForm() {
+function LoginForm({Login, error}) {
+    const[details,setDetails] = useState({name: ""})
+
+    const submitHandler = e => {
+        e.preventDefault();
+
+        Login(details);
+
+    }
+
   return (
-    <form>
+    <form onSubmit = {submitHandler}>
         <div className="form-inner">
             <h2>Login</h2>
             {/* Error! */}
